@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+.tab-content{
+    background-color: rgb(226, 219, 219);
+    height: 150vh;
+}
+
+
+.main-nav {
+    position: relative;
+    background-color: #333456;
+    height: 280px;
+    color:white;
+    overflow: visible;  
+    
+}
+
+
+.nav-pills{
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.nav-pills .nav-link.active{
+    background-color: #e0e1e7;
+    color: #333456;
+}
+
+.nav-pills .nav-link{
+    color: #333456;
+    border-radius: 0px;
+}
+
+.nav-link{
+    margin: 5px;
+}
+
+.top-nav{
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+
+
+.second-nav{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.status{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+
+}
+
+
+.stat1{
+    background-color: white;
+    border-radius: 5px;
+    color: #333456;
+    padding: 10px;
+}
+
+.stat1 h4{
+    margin-bottom: 15px;
+}
+
+.icon{
+    display: flex; 
+    justify-content: flex-start; 
+    flex-direction: row;
+    background-color: #333456; 
+    color: white; 
+    height: max-content;
+    border-radius: 50%;
+    padding: 13px;
+    margin-top: 5px;
+}
+
+
+.graph-student{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+    position: absolute;
+    column-gap: 60px;
+    margin-left: 20px;
+}
+.graph1{
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    height: 600px;
+    color: #333456;
+}
+
+.graph2{
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    color: #333456;
+
+}
+
+.graph-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #333456;
+    background: transparent;
+}
+
+a{
+    color: #333456;
+
+}
+a:hover{
+text-decoration: none;
+}
+
+.graph-btn:hover{
+    background-color: #333456;
+    color: white;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+
+/* //projects// */
+
+.projects{
+    height: max-content;
+    background-color: white;
+    margin-top: 10px;
+   border-radius: 10px;
+   color: #333456;
+}
+
+
+td, th{
+    border: none;
+    border-style: hidden;
+}
+
+
+tr{
+    text-align: center;
+
+}
+/* add projects */
+.add-projects{
+    height: max-content;
+    background-color: white;
+    margin-top: 10px;
+   border-radius: 10px;
+   color: #333456;
+   padding: 10px;
+}
+
+/* university project list */
+
+.uni-arrow{
+    
+    float: right;
+    display: inline;
+}

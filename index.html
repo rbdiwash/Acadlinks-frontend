@@ -21,18 +21,29 @@
           <h3>Our logo</h3>
         </a>
 
-        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-          aria-controls="v-pills-home" aria-selected="true">Home</a>
-        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-          aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+        <a class="nav-link active" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab"
+          aria-controls="v-pills-dashboard" aria-selected="true"><i class="fa fa-tachometer "></i> Dashboard</a>
+
+        <a class="nav-link" id="v-pills-universities-tab" data-toggle="pill" href="#v-pills-universities" role="tab"
+          aria-controls="v-pills-universities" aria-selected="false"><i class="fa fa-university"></i> Universities</a>
+
+        <a class="nav-link" id="v-pills-projects-tab" data-toggle="pill" href="#v-pills-projects" role="tab"
+          aria-controls="v-pills-projects" aria-selected="false"><i class="fa fa-save"></i> Projects</a>
+
         <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-          aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+          aria-controls="v-pills-messages" aria-selected="false"><i class="fa fa-commenting"></i> Messages</a>
+
+        <a class="nav-link" id="v-pills-calendar-tab" data-toggle="pill" href="#v-pills-calendar" role="tab"
+          aria-controls="v-pills-calendar" aria-selected="false"><i class="fa fa-calendar"></i> Calendar</a>
+
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+          aria-controls="v-pills-profile" aria-selected="false"><i class="fa fa-user"></i> Profile</a>
+
         <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-          aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          aria-controls="v-pills-settings" aria-selected="false"><i class="fa fa-cog"></i> Settings</a>
       </div>
       <div class="container tab-content col-md-10" id="v-pills-tabContent">
-        <div class="content-nav tab-pane fade show active" id="v-pills-home" role="tabpanel"
-          aria-labelledby="v-pills-home-tab">
+        <div class="content-nav tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-home-tab">
           <div class="container main-nav col-md-12">
             <div class="top-nav">
               <i class="fa fa-bell mr-4"></i>
@@ -96,13 +107,13 @@
             </div>
           </div>
 
-          <div class="  container graph-student">
+          <div class="container graph-student">
             <div class="graph1">
               OVERVIEW
               <h5>This is just a dummy data for now.</h5>
-              <div class="d-flex" style="justify-content: end; margin-top: -40px; ">
+              <div class="d-flex" style="justify-content: end; margin-top: -40px; flex-wrap: wrap;">
                 <a href="projects.html" class="graph-btn" style="margin-right: 20px;">Month</a>
-                <a href="projects.html"class="graph-btn">Week</a>
+                <a href="projects.html" class="graph-btn">Week</a>
               </div>
             </div>
 
@@ -113,12 +124,180 @@
           </div>
         </div>
 
-        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem,
-          ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut....</div>
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis sed impedit fugit odio molestias rem
-          nulla voluptatum quos laudantium minus tempora perspiciatis ab dolore quam provident, quo aspernatur!
-          Architecto a repellat consequatur esse perferendis accusamus animi nam. Commodi, illo.</div>
+        <div class="tab-pane fade" id="v-pills-universities" role="tabpanel" aria-labelledby="v-pills-universities-tab">
+          <div class="container main-nav col-md-12">
+            <div class="top-nav">
+                <i class="fa fa-bell mr-4"></i>
+                <i class="fa fa-info-circle mr-4"></i>
+                <img src="divash.jpg" class="mr-4" style="width: 3%; border-radius: 100%;">
+                <h5>Divash Ranabhat</h5>
+            </div>
+            <div class="second-nav">
+                <h4><b></b>Projects</b></h4>
+                <i class="fa fa-home"></i>
+                Home - Projects
+            </div>
+            <div class="container-fluid add-projects col-md-12">
+                <div style="padding:20px">
+                    <h4 style="font-weight: bold;">List of Universities</h4>
+                    <a href="add-projects.html" class="graph-btn"
+                        style="float: right; margin-top: -40px;">Export Data</a>
+                    <div style="margin-top: 30px;">
+                        <div class="project-table table-responsive p-2" style="margin-top:30px;">
+                            <table class="table table-striped">
+                                <thead class="thead-LIGHT">
+                                    <tr>
+
+                                        <th scope="col">SN</th>
+                                        <th scope="col">NAME OF UNIVERSITY</th>
+                                        <th scope="col">SPECIALIZATION</th>
+                                        <th scope="col">COST</th>
+                                        <th scope="col">PROJECT COMPLETED</th>
+                                        <th scope="col"></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <th>Project X</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+
+                                        <td>20%</td>
+                                        <td><i class="fa fa-ellipsis-v"></i></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <th>Acadlinks</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+
+                                        <td>20%</td>
+                                        <td><i class="fa fa-ellipsis-v"></i></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <th>Homey</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+
+                                        <td>20%</td>
+                                        <td><i class="fa fa-ellipsis-v"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- <div class="uni-arrow">
+                                <ul>
+                                    <li> <i class="fa fa-chevron-left"></i></li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <i class="fa fa-chevron-right"></i>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
+          <div class="container main-nav col-md-12">
+            <div class="top-nav">
+              <i class="fa fa-bell mr-4"></i>
+              <i class="fa fa-info-circle mr-4"></i>
+              <img src="divash.jpg" class="mr-4" style="width: 3%; border-radius: 100%;">
+              <h5>Divash Ranabhat</h5>
+            </div>
+            <div class="second-nav">
+              <h4><b></b>Projects</b></h4>
+              <i class="fa fa-home"></i>
+              Home - Projects
+            </div>
+            <div class="container-fluid projects col-md-12">
+              <div style="padding:20px">
+                <h4 style="font-weight: bold;">List of Projects</h4>
+                <a href="add-projects.html" class="graph-btn" style="float: right; margin-top: -40px;">Add Project</a>
+                <div class="project-table table-responsive p-2" style="margin-top:30px;">
+                  <table class="table table-striped">
+                    <thead class="thead-LIGHT">
+                      <tr>
+
+                        <th scope="col">SN</th>
+                        <th scope="col">PROJECT</th>
+                        <th scope="col">CREATED</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">BUDGET</th>
+                        <th scope="col">UNIVERSITY</th>
+                        <th scope="col">COMPLETION</th>
+                        <th scope="col"></th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <th>Project X</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <TD>KU</TD>
+                        <td>20%</td>
+                        <td><i class="fa fa-ellipsis-v"></i></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <th>Acadlinks</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <TD>KU</TD>
+                        <td>20%</td>
+                        <td><i class="fa fa-ellipsis-v"></i></td>
+
+
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <th>Homey</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <TD>KU</TD>
+                        <td>20%</td>
+                        <td><i class="fa fa-ellipsis-v"></i></td>
+
+
+
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+        </div>
+        <div class="tab-pane fade" id="v-pills-calendar" role="tabpanel" aria-labelledby="v-pills-calendar-tab">...
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...
+        </div>
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
         </div>
 
